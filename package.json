@@ -7,8 +7,11 @@
     "dev": "vite",
     "start": "vite ",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "http://awesomeDev12.github.io/react-chatgpt-clone",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -20,6 +23,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22",
     "vite": "^4.2.0"
   }
